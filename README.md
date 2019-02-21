@@ -1,3 +1,3 @@
 ## Demo
 
-https://medical-backend.herokuapp.com
+https://awesome-backend.herokuapp.com
