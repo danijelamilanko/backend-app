@@ -71,7 +71,7 @@ router.put('/:id', (req, res) => {
     if (req.body.birthday) objForUpdate.birthday = req.body.birthday;
     if (req.body.allergies) objForUpdate.allergies = req.body.allergies;
     if (req.body.encounters) objForUpdate.encounters = req.body.encounters;
-    if (req.body.immunizations) objForUpdate.allergies = req.body.immunizations;
+    if (req.body.immunizations) objForUpdate.immunizations = req.body.immunizations;
     objForUpdate = { $set: objForUpdate };
 
     Demographic.findByIdAndUpdate(req.params.id, objForUpdate, {new: true})

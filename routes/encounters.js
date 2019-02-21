@@ -62,9 +62,9 @@ router.put('/:id', (req, res) => {
     if (req.body.location) objForUpdate.location = req.body.location;
     if (req.body.date) objForUpdate.date = req.body.date;
     if (req.body.doctor) objForUpdate.doctor = req.body.doctor;
-    if (req.body.guardian) objForUpdate.allergies = req.body.guardian;
-    if (req.body.plan) objForUpdate.encounters = req.body.plan;
-    if (req.body.provider) objForUpdate.allergies = req.body.provider;
+    if (req.body.guardian) objForUpdate.guardian = req.body.guardian;
+    if (req.body.plan) objForUpdate.plan = req.body.plan;
+    if (req.body.provider) objForUpdate.provider = req.body.provider;
     if (req.body.medications) objForUpdate.medications = req.body.medications;
     objForUpdate = { $set: objForUpdate };
 

@@ -10,4 +10,4 @@ const medicationSchema = new mongoose.Schema({
     nameOfPrescriber: {type: String, trim: true, required: true},
 });
 
-module.exports = mongoose.model('Immunizations', medicationSchema);
+module.exports = mongoose.model('Medications', medicationSchema);
