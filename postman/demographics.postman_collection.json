@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "demographics",
+		"_postman_id": "9e5f8dda-0fc1-b331-b522-4708ba9f662e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DELETE demographic",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/demographics/5c6ef7f7453d4700179915f1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Danijela\",\n    \"lastName\" : \"Milanko\",\n    \"gender\" : \"Female\",\n    \"materialStatus\" : \"Single\",\n    \"religiousAffiliation\" : \"Christian\",\n    \"ethnicity\" : \"Serbian\",\n    \"languageSpoken\" : \"Serbian\",\n    \"address\" : \"Svetojovanska 11, Novi Sad, Serbia\",\n    \"telephone\" : \"00381659988564\",\n    \"birthday\" : \"June 14, 1978\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET demographic",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/demographics/5c6ef81d453d4700179915f2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Danijela\",\n    \"lastName\" : \"Milanko\",\n    \"gender\" : \"Female\",\n    \"materialStatus\" : \"Single\",\n    \"religiousAffiliation\" : \"Christian\",\n    \"ethnicity\" : \"Serbian\",\n    \"languageSpoken\" : \"Serbian\",\n    \"address\" : \"Svetojovanska 11, Novi Sad, Serbia\",\n    \"telephone\" : \"00381659988564\",\n    \"birthday\" : \"June 14, 1978\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE demographic",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/demographics/5c6ef7d1453d4700179915f0",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"allergies\" : [\"5c6ed885efc8c718c3c10988\"],\n    \"encounters\" : [\"5c6edd78198ac51c418bca38\"],\n    \"immunizations\" : [\"5c6ed91fefc8c718c3c10989\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE a demographic",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/demographics/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\" : \"Danijela\",\n    \"lastName\" : \"Milanko\",\n    \"gender\" : \"Female\",\n    \"materialStatus\" : \"Single\",\n    \"religiousAffiliation\" : \"Christian\",\n    \"ethnicity\" : \"Serbian\",\n    \"languageSpoken\" : \"Serbian\",\n    \"address\" : \"Svetojovanska 11, Novi Sad, Serbia\",\n    \"telephone\" : \"00381659988564\",\n    \"birthday\" : \"June 14, 1978\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

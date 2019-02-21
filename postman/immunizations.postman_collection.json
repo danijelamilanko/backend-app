@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "immunizations",
+		"_postman_id": "a4d5dfa6-9e6b-08ba-c36d-0730f27281ca",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GETT immunization",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/immunizations/5c6efb5f453d470017991601",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create immunization",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/immunizations",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"date\" : \"May 2001\",\n \"nameOfImmunization\": \"Virus vaccine\",\n \"type\": \"Intramuscular injection\",\n \"dose\" : \"50 / mcg\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE immunization",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/immunizations/5c6efb5f453d470017991601",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dose\": \"10 / mcg\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE immunization",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/immunizations/5c6efb5f453d470017991601",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

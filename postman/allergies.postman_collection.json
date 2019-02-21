@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "allergies",
+		"_postman_id": "94fd94ea-79b0-ba22-f777-d4fede36bb77",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE allergy",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/allergies/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nameOfAllergy\": \"Bee Stings\",\n \"reaction\": \"Shock\",\n \"severity\": \"Severe\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET allergy",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/allergies/5c6efab1453d4700179915fb",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nameOfAllergy\": \"Bee Stings\",\n \"reaction\": \"Shock\",\n \"severity\": \"Severe\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE allergy",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/allergies/5c6efab1453d4700179915fb",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"severity\": \"Serious\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE allergy",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/allergies/5c6ef33d453d4700179915e2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

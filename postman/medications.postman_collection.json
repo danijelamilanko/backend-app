@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "medications",
+		"_postman_id": "dccdcf2d-adee-ad8e-b8a3-ef345ca1573a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET medication",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/medications/5c6efb93453d470017991602",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE medication",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/medications/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"date\": \"May 2001\",\n \"type\": \"Liquid\",\n \"nameOfMedication\": \"Virus vaccine\",\n \"instructions\": \"2 puffs once a day\",\n \"dose\": \"50 / mcg\",\n \"rate\": \"1 / day\",\n \"nameOfPrescriber\": \"Ashby Medical Center\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE medication",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/medications/5c6efb93453d470017991602",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"rate\": \"3 / day\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE medication",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/medications/5c6ef4d8453d4700179915e3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

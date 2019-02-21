@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "encounters",
+		"_postman_id": "d7b7d37b-13d8-2300-256b-740f1d375666",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE encounter",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/encounters/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nameOfEncounter\": \"ED Visit\",\n\t\"location\": \"Community Hospital\",\n\t\"date\": \"March 28, 2019\",\n\t\"doctor\": \"Dr. Henry Seven\",\n\t\"guardian\": {\"role\": \"Sister\", \"firstName\": \"Dragana\", \"lastName\": \"Milanko\", \"address\": \"\", \"telephone\": \"\"},\n\t\"plan\": {\n\t\t\"nameOfPlannedActivity\": \"Office consultation\",\n\t\t\"date\": \"May 28, 2019\",\n\t\t\"instructions\": \"\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE encounter",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/encounters/5c6eff36a5f007001766b5b5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"provider\" : \"5c6ed94befc8c718c3c1098a\",\n    \"medications\" : [\"5c6edb68198ac51c418bca36\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET encounter",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/encounters/5c6eff36a5f007001766b5b5",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE encounter",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/encounters/5c6eff36a5f007001766b5b5",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

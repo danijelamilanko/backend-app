@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "providers",
+		"_postman_id": "fa1ddc0c-8e94-e51c-67a7-9d27b8d876c2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE provider",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/providers/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nameOfProvider\": \"Ashby Medical Center\",\n \"address\": \"Boston 59782\",\n \"telephone\": \"124-552-6622\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE provider",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/providers/5c6efbd1453d470017991604",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"telephone\": \"5555-5555\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET provider",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/providers/5c6efbd1453d470017991604",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE provider",
+			"request": {
+				"url": "https://awesome-backend.herokuapp.com/providers/5c6efbd1453d470017991604",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
